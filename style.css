@@ -1,0 +1,856 @@
+  /* font-family: 'Rambla', sans-serif; */
+/* font-family: 'Otomanopee One', sans-serif; TITLES */
+/* font-family: 'Nunito', sans-serif; BODY TEXT */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  min-height: 100%;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1.2fr 1fr 1.2fr 1fr;
+  max-width: 100%;
+  height: 230vh;
+  grid-template-areas:
+    "box1 box1 box1"
+    "box2 box2 box3"
+    "box4 box4 box3"
+    "box4 box4 box5"
+    "footer footer footer";
+}
+
+
+.box1 {
+  grid-area: box1;
+  background-color: #0f1932;
+  z-index: 2;
+}
+.box2 {
+  grid-area: box2;
+  background-color: rgba(236, 232, 225, 0.35);
+  border-radius: 20px;
+  margin: 0.8vh;
+  z-index: 2;
+}
+
+.box3 {
+  grid-area: box3;
+  background-color: rgba(236, 232, 225, 0.35);
+  border-radius: 20px;
+  margin: 0.8vh;
+  z-index: 2;
+}
+
+.box4 {
+  grid-area: box4;
+  background-color: rgba(236, 232, 225, 0.35);
+  border-radius: 20px;
+  margin: 0.8vh;
+  z-index: 2;
+}
+
+.box5 {
+  grid-area: box5;
+  background-color: rgba(236, 232, 225, 0.35);
+  border-radius: 20px;
+  margin: 0.8vh;
+  z-index: 2;
+}
+
+.image_container {
+  border: 0.6vh double #aa8151;
+  border-radius: 100%;
+  width: 20vh;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.self {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: 50% 30%;
+  border-radius: 100%;
+}
+
+.name_container {
+  border: 0.5vh outset #aa8151;
+  min-height: 15vh;
+  margin-top: -5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-family: 'Rambla', sans-serif;
+  background-color: rgba(236, 232, 225, 0.35);
+  box-shadow: 4px 4px 15px black;
+  padding-bottom: 1%;
+  background-image: url(img/axie-w-gif.gif);
+  background-repeat: no-repeat;
+  animation-name: flying;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes flying {
+  from {background-position: 150% 100%;}
+  to {background-position: -55% 100%;}
+}
+
+.name_container > p {
+  color: #aa8151;
+  text-align: center;
+  font-size: 1.9vh;
+}
+
+.myName {
+  color: white;
+  font-size: 3.1vh;
+  margin-top: 7%;
+  text-align: center;
+}
+
+.profile_container {
+  margin-top: 2%;
+  width: 100%;
+  height: 80%;
+}
+
+.white_axie {
+  width: 13vh;
+  position: relative;
+  top: -15vh;
+}
+
+/* .box1 > div {
+  border: 2px solid red;
+} */
+
+.contact_container {
+  width: 100%;
+  height: 60%;
+  font-family: 'Rambla', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.title_objective {
+  height: 15%;
+}
+
+.box2_content {
+  height: 85%;
+}
+
+.title_objective> h1 {
+  color: #aa8151;
+  font-family: 'Otomanopee One', sans-serif;
+  margin: 3% 0 0 3%;
+  font-size: 4vh;
+}
+
+.obj::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 10vh;
+  height: 8vh;
+  background-image: url(img/blue_axi.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -8vh;
+  right: -20vh;
+}
+
+.exp::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 10vh;
+  height: 10vh;
+  background-image: url(img/orange-g.gif);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -8vh;
+  right: -25vh;
+}
+
+.skills::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 8vh;
+  height: 8vh;
+  background-image: url(img/purple-g.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: -6vh;
+  right: -13vh;
+}
+
+.gaming_list {
+  margin: 5% 0 0 12%;
+  opacity: 0.6;
+  text-align: start;
+  float: left;
+  width: 23%;
+}
+
+.gaming_list2 {
+  margin: 5% 20% 0 12%;
+  opacity: 0.6;
+  float: right;
+  width: 20%;
+}
+
+.gaming_list > li {
+  margin-top: 3%;
+  margin-right: 5%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2vh;
+}
+
+.gaming_list2 > li {
+  margin-top: 3%;
+  margin-right: 5%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2vh;
+}
+
+.obj_list {
+  margin: 8% 0 0 12%;
+  opacity: 0.6;
+}
+
+.obj_list > li {
+  margin-top: 5%;
+  margin-right: 5%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2vh;
+}
+
+.reasons_list {
+  margin: 0% 0 0 12%;
+  opacity: 0.6;
+}
+
+.reasons_list > li {
+  margin-top: 5%;
+  margin-right: 5%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2vh;
+}
+
+.skills_list {
+  margin: 0% 0 0 12%;
+  opacity: 0.6;
+}
+
+.skills_list > li {
+  margin-top: 5%;
+  margin-right: 5%;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2vh;
+}
+
+
+.title_expectation > h1 {
+  color: #aa8151;
+  font-family: 'Otomanopee One', sans-serif;
+  margin: 3% 0 0 3%;
+  font-size: 4vh;
+}
+
+.axie_exp {
+  margin: -8% 10% 0 10%;
+  color: rgba(0, 0, 0, .6);
+  text-align: justify;
+  font-size: 1.7vh;
+}
+
+.axie_exp::before {
+  content: 'Axie Experience';
+  display: block;
+  position: relative;
+  bottom: 2vh;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 1);
+}
+
+.slp {
+  margin: 10% 10% 0 10%;
+  color: rgba(0, 0, 0, .6);
+  text-align: justify;
+  font-size: 1.7vh;
+}
+
+.slp::before {
+  content: 'SLP per day';
+  display: block;
+  position: relative;
+  bottom: 2vh;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 1);
+}
+
+.box3_content {
+  font-family: 'Nunito', sans-serif;
+}
+
+.grind {
+  margin: 10% 10% 0 10%;
+  color: rgba(0, 0, 0, .6);
+  text-align: justify;
+  font-size: 1.7vh;
+}
+
+.grind::before {
+  content: 'Grinding hours';
+  display: block;
+  position: relative;
+  bottom: 2vh;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 1);
+}
+
+.internet {
+  margin: 10% 10% 0 10%;
+  color: rgba(0, 0, 0, .6);
+  text-align: justify;
+  font-size: 1.7vh;
+}
+
+.internet::before {
+  content: 'Internet Connection';
+  display: block;
+  position: relative;
+  bottom: 2vh;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 1);
+}
+
+.device {
+  margin: 10% 10% 0 10%;
+  color: rgba(0, 0, 0, .6);
+  text-align: justify;
+  font-size: 1.7vh;
+}
+
+.device::before {
+  content: 'Device';
+  display: block;
+  position: relative;
+  bottom: 2vh;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 1);
+}
+
+
+
+.title_gaming {
+  height: 10%;
+}
+
+.gaming_content {
+ height: 35%;
+}
+
+.title_reasons {
+  height: 10%;
+}
+
+.reasons_content {
+ height: 45%;
+}
+
+.title_gaming > h1, .title_reasons > h1 {
+  color: #aa8151;
+  font-family: 'Otomanopee One', sans-serif;
+  margin: 0 0 0 3%;
+  font-size: 4vh;
+}
+
+.title_skills {
+  height: 15%;
+}
+
+.title_skills > h1 {
+  color: #aa8151;
+  font-family: 'Otomanopee One', sans-serif;
+  margin: 0 0 0 3%;
+  font-size: 4vh;
+}
+
+.skills_container {
+  height: 85%;
+}
+
+.axie_logo {
+  width: 55vh;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #0f1932;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 2vh;
+  z-index: 2;
+}
+
+.obj:hover, .exp:hover, .gexp:hover, .reasons:hover, .skills:hover{
+  animation-name: colors;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  cursor: crosshair;
+}
+
+@keyframes colors {
+  0% {color: #0f1932;}
+  25% {color: white;}
+  50% {color: #0f1932;}
+  75% {color: white;}
+  100% {color: #0f1932;}
+}
+
+.flying_axie {
+  position: absolute;
+  transform: rotateY(180deg) scale(2);
+  right: -15%;
+  bottom: 25%;
+  z-index: 1;
+
+}
+
+.soc_icons {
+  width: 6vh;
+  filter: invert(95%) sepia(5%) saturate(1584%) hue-rotate(4deg) brightness(105%) contrast(81%);
+  transition: all 1s ease;
+}
+
+.soc_icons:hover {
+  filter: invert(86%) sepia(79%) saturate(6713%) hue-rotate(164deg) brightness(92%) contrast(88%);
+}
+
+.soc_list {
+  list-style-type: none;
+  display: flex;
+  width: 30vh;
+  justify-content: space-around;
+  margin-top: 4%;
+}
+
+.soc_container {
+  height: 5vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+.soc_container::before {
+  content: 'Reach me out through:';
+  display: block;
+  width: 29vh;
+  height: 5vh;
+  position: relative;
+  margin-top: -15%;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #fff3da;
+}
+
+.email::after {
+  content: 'PM via messenger';
+  width: 18vh;
+  height: 5vh;
+  position: relative;
+  display: block;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(236, 232, 225, 0.35);
+  border-radius: 10px;
+  bottom: 8vh;
+  transform: scale(0);
+  transition: transform ease-out 150ms, bottom ease-out 150ms;
+  cursor: pointer;
+  transform-origin: bottom;
+}
+
+.email:hover::after {
+  transform: scale(1);
+}
+
+.reach {
+  margin-top: -5%;
+  display: block;
+}
+
+/* ============================= MEDIA QUERIES ============================= */
+
+@media only screen and (max-width: 1034px) {
+  .gaming_list {
+    margin: 15% 0 0 12%;
+    opacity: 0.6;
+    text-align: start;
+    float: left;
+    width: 23%;
+  }
+
+  .gaming_list2 {
+    margin: 15% 20% 0 12%;
+    opacity: 0.6;
+    float: right;
+    width: 20%;
+  }
+  @keyframes flying {
+    from {background-position: 180% 100%;}
+    to {background-position: -70% 100%;}
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .email::before {
+    content: '';
+    display: block;
+    width: 3vh;
+    height: 3vh;
+    background-image: url(img/envelope.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: -2.9vh;
+    left: -4vh;
+    filter: invert(99%) sepia(98%) saturate(2%) hue-rotate(131deg) brightness(110%) contrast(100%);
+  }
+
+  .phone::before {
+    content: '';
+    display: block;
+    width: 3vh;
+    height: 3vh;
+    background-image: url(img/phone.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    bottom: -2.9vh;
+    left: -4vh;
+    filter: invert(99%) sepia(98%) saturate(2%) hue-rotate(131deg) brightness(110%) contrast(100%);
+  }
+
+  .fb::before {
+    content: '';
+    display: block;
+    width: 3vh;
+    height: 3vh;
+    background-image: url(img/001-facebook.svg);
+    background-position: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: -2.9vh;
+    left: -4vh;
+    filter: invert(99%) sepia(98%) saturate(2%) hue-rotate(131deg) brightness(110%) contrast(100%);
+  }
+
+  .location::before {
+    content: '';
+    display: block;
+    width: 3vh;
+    height: 3vh;
+    background-image: url(img/pin.svg);
+    background-position: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: -2.9vh;
+    left: -4vh;
+    filter: invert(99%) sepia(98%) saturate(2%) hue-rotate(131deg) brightness(110%) contrast(100%);
+  }
+  .email {
+    font-size: 1.8vh;
+  }
+  @keyframes flying {
+    from {background-position: 200% 100%;}
+    to {background-position: -90% 100%;}
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 0.3fr 1fr 1fr 1.5fr 1fr;
+    max-width: 100%;
+    height: 350vh;
+    grid-template-areas:
+      "box1 box1 box1"
+      "box2 box2 box2"
+      "box3 box3 box3"
+      "box4 box4 box5"
+      "footer footer footer";
+  }
+  .box3 {
+    grid-area: box3;
+    background-color: rgba(236, 232, 225, 0.35);
+    border-radius: 20px;
+    margin: 0.8vh;
+    padding-bottom: 50px;
+  }
+  .header {
+    height: 15vh;
+  }
+  .box4 {
+    height: 100vh;
+  }
+  .profile_container {
+    margin-top: 5%;
+    width: 100%;
+    height: 70%;
+  }
+  .phone {
+    margin-left: 20%;
+    margin-top: -5%;
+    font-size: 2vh;
+    color: white;
+  }
+  .profile_container {
+    margin-top: 2%;
+    width: 100%;
+    height: 90%;
+  }
+  @keyframes flying {
+    from {background-position: 200% 70%;}
+    to {background-position: -90% 70%;}
+  }
+}
+
+@media only screen and (max-width: 709px) {
+  .container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 0.4fr 0.5fr 1fr 0.5fr 0.5fr;
+    max-width: 100%;
+    min-height: 200vh;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box2"
+      "box4 box3"
+      "box4 box5"
+      "footer footer";
+  }
+
+  .gaming_list {
+    margin: 5% 0 0 12%;
+    opacity: 0.6;
+    text-align: start;
+    float: left;
+    width: 23%;
+  }
+  .gaming_list2 {
+    margin: 5% 20% 0 12%;
+    opacity: 0.6;
+    float: right;
+    width: 20%;
+  }
+
+  .reasons_list > li {
+    margin-top: 10%;
+    margin-right: 5%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vh;
+  }
+
+  .box4 {
+    height: 120vh;
+  }
+
+  .title_expectation > h1 {
+    color: #aa8151;
+    font-family: 'Otomanopee One', sans-serif;
+    margin: 3% 0 0 3%;
+    font-size: 3vh;
+  }
+
+  .exp::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 10vh;
+    height: 10vh;
+    background-image: url(img/orange-g.gif);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -7vh;
+    right: -19vh;
+  }
+
+  .obj::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 9vh;
+    height: 9vh;
+    background-image: url(img/blue_axi.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -6vh;
+    right: -16vh;
+  }
+
+  .title_objective> h1 {
+    color: #aa8151;
+    font-family: 'Otomanopee One', sans-serif;
+    margin: 3% 0 0 3%;
+    font-size: 3vh;
+  }
+
+  .profile_container {
+    margin-top: 5%;
+    width: 100%;
+    height: 50%;
+  }
+
+  .email {
+    margin-left: 20%;
+    color: white;
+    font-size: 2vh;
+  }
+
+  .email::before {
+    content: '';
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    background-image: url(img/envelope.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: -3.8vh;
+    left: -6vh;
+    filter: invert(99%) sepia(98%) saturate(2%) hue-rotate(131deg) brightness(110%) contrast(100%);
+  }
+
+  .phone::before {
+    content: '';
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    background-image: url(img/phone.svg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    bottom: -3.5vh;
+    left: -6vh;
+    filter: invert(99%) sepia(98%) saturate(2%) hue-rotate(131deg) brightness(110%) contrast(100%);
+  }
+
+  .fb::before {
+    content: '';
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    background-image: url(img/001-facebook.svg);
+    background-position: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: -3.8vh;
+    left: -6vh;
+    filter: invert(99%) sepia(98%) saturate(2%) hue-rotate(131deg) brightness(110%) contrast(100%);
+  }
+
+  .location::before {
+    content: '';
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    background-image: url(img/pin.svg);
+    background-position: center;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    bottom: -3.5vh;
+    left: -6vh;
+    filter: invert(99%) sepia(98%) saturate(2%) hue-rotate(131deg) brightness(110%) contrast(100%);
+  }
+
+  .header {
+    grid-area: header;
+    background-image: url(img/axie.jpg);
+    background-position: center 43%;
+    background-size: contain;
+  }
+  .image_container {
+    border: 0.6vh double rgba(236, 232, 225, 0.35);
+    border-radius: 100%;
+    width: 18vh;
+    height: 70%;
+    margin: 0 auto;
+  }
+
+  .flying_axie {
+    position: absolute;
+    transform: rotateY(180deg) scale(2);
+    right: -35%;
+    bottom: 40%;
+    z-index: 1;
+  }
+
+  @keyframes flying {
+    from {background-position: 500% 70%;}
+    to {background-position: -390% 70%;}
+  }
+}
+
+@media only screen and (max-width: 614px) {
+  .reasons_list > li {
+    margin-top: 10%;
+    margin-right: 5%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.75vh;
+  }
+}

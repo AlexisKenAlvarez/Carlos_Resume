@@ -38,7 +38,7 @@
 let carlos = document.getElementById('carlos');
 
 carlos.addEventListener('mouseover', () => {
-  carlos.setAttribute('src', './img/LOS.gif');
+  carlos.setAttribute('src', './img/compLOS2.gif');
 })
 
 carlos.addEventListener('mouseout', () => {
